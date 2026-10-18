@@ -143,35 +143,7 @@ AI 엔진 연결 방식은 다음과 같습니다.
 
 대화 기록은 `~/.claude/projects`와 `~/.codex/sessions`에서 읽습니다. 새 기록은 기존 파일 끝에 추가합니다. Sidekick 설정과 로그는 `~/.sidekick3`에 저장합니다.
 
-## 직접 빌드
 
-Windows에서 다음 명령을 실행합니다.
-
-```
-powershell -File scripts/build-electron.ps1 -Out <폴더>
-```
-
-빌드에 필요한 항목:
-
-- .NET 10 SDK
-- Electron 44.6.0 런타임 — 기본 위치: `%USERPROFILE%\.sidekick\electron\dist`
-- `koffi` 모듈
-
-Windows 설치 파일은 `scripts/build-installer.ps1`로 만듭니다. Linux 패키지는 `python scripts/build-linux.py --arch arm64|x64`로, 휴대폰 APK는 `scripts/build-android.ps1`로 만듭니다.
-
-테스트는 `tests/` 아래 각 프로젝트에서 다음 명령으로 실행합니다.
-
-```
-dotnet run --project tests/<이름>.Tests -c Debug
-```
-
-## 알려진 한계
-
-- Google AI에는 이미지와 화면 캡처를 한 번에 최대 4장까지 첨부할 수 있습니다. GPT-OSS 모델은 첨부를 지원하지 않습니다. Antigravity CLI는 대화 중 도구 승인을 지원하지 않아, 추가 승인이 필요한 도구를 건너뜁니다.
-- 공식 앱에서 사용 중인 대화에는 기록을 추가하지 않습니다. 해당 앱이 대화를 더 이상 사용하지 않을 때 반영합니다.
-- Claude 앱에서 새로 추가된 대화를 보려면 앱을 다시 실행해야 합니다.
-- 휴대폰에서 고쳐 보내기는 글만 고칠 수 있고, 카메라로 바로 찍어 첨부하는 기능은 없습니다.
-- 화면 글자는 한국어입니다. macOS는 지원하지 않습니다.
 
 ## 라이선스
 
