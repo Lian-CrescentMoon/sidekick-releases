@@ -114,14 +114,7 @@ What the phone app can do:
 
 Get the APK from [sidekick-releases](https://github.com/Lian-CrescentMoon/sidekick-releases/releases/latest) or build it with `scripts/build-android.ps1`. Once installed, the phone app downloads newer versions from the paired PC or the public GitHub repository into the Downloads folder by itself; you install the downloaded file manually. Setup and limits: [docs/REMOTE_SETUP.md](docs/REMOTE_SETUP.md) (Korean).
 
-## Developing Sidekick inside Sidekick
 
-You can have an AI change Sidekick itself from within Sidekick.
-
-- Deploying to your own PC is done by a separate process that does not depend on the running app. If the new version does not start properly within 90 seconds, the previous version is restored automatically.
-- After the restart, Sidekick asks the conversation that was running to carry on, once (only conversations from the last 30 minutes; can be turned off in settings).
-- Each deploy bumps the last number of the version.
-- Once the new version runs well, the Windows installer, Linux packages and phone APK are published to `sidekick-releases` automatically. Create `~/.sidekick3/no-auto-release` to turn this off.
 
 ## Layout
 
