@@ -128,25 +128,6 @@ Get the APK from [sidekick-releases](https://github.com/Lian-CrescentMoon/sideki
 
 How the engines are connected: Claude runs the official app's `claude.exe` over the stream-json protocol, Codex runs `codex.exe app-server` over JSON-RPC, and Google AI runs the Antigravity CLI. Conversations are read from the official histories in `~/.claude/projects` and `~/.codex/sessions`; Sidekick only ever appends to them. Sidekick's own settings and logs are in `~/.sidekick3`.
 
-## Building
-
-On Windows:
-
-```
-powershell -File scripts/build-electron.ps1 -Out <folder>
-```
-
-You need the .NET 10 SDK, the Electron 44.6.0 runtime (default location `%USERPROFILE%\.sidekick\electron\dist`) and the `koffi` module. `scripts/build-installer.ps1` builds the installer, `python scripts/build-linux.py --arch arm64|x64` builds the Linux packages and `scripts/build-android.ps1` builds the phone APK.
-
-Run a test project with `dotnet run --project tests/<Name>.Tests -c Debug`.
-
-## Known limits
-
-- Google AI accepts image and screen-capture attachments (up to 4 per message; not with GPT-OSS models). Conversations continued through the Antigravity CLI do not support in-conversation tool approval yet; tools that need extra approval are skipped by the official engine.
-- Sidekick does not append to a history that an official app currently has open; it waits until the app lets go.
-- The Claude app only shows newly added conversations after it restarts.
-- On the phone, edit-and-resend changes text only, and there is no direct camera capture.
-- The UI text is Korean. macOS is not supported.
 
 ## License
 
