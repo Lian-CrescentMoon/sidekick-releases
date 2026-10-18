@@ -118,7 +118,6 @@ Android 앱(Sidekick Remote)으로 PC의 Sidekick에 연결할 수 있습니다.
 |---|---|---|---|
 | ![](docs/screenshots/phone-list.png) | ![](docs/screenshots/phone-approval.png) | ![](docs/screenshots/phone-markdown.png) | ![](docs/screenshots/phone-dark.png) |
 
-APK는 [sidekick-releases](https://github.com/Lian-CrescentMoon/sidekick-releases/releases/latest)에서 받거나 `scripts/build-android.ps1`로 직접 빌드합니다.
 
 설치 후에는 휴대폰 앱이 연결된 PC나 GitHub 공개 저장소에서 새 버전을 받아 다운로드 폴더에 저장합니다. 받은 파일을 직접 실행하면 업데이트를 설치할 수 있습니다.
 
