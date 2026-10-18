@@ -112,8 +112,6 @@ What the phone app can do:
 |---|---|---|---|
 | ![](docs/screenshots/phone-list.png) | ![](docs/screenshots/phone-approval.png) | ![](docs/screenshots/phone-markdown.png) | ![](docs/screenshots/phone-dark.png) |
 
-Get the APK from [sidekick-releases](https://github.com/Lian-CrescentMoon/sidekick-releases/releases/latest) or build it with `scripts/build-android.ps1`. Once installed, the phone app downloads newer versions from the paired PC or the public GitHub repository into the Downloads folder by itself; you install the downloaded file manually. Setup and limits: [docs/REMOTE_SETUP.md](docs/REMOTE_SETUP.md) (Korean).
-
 
 
 ## Layout
