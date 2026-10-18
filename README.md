@@ -124,14 +124,6 @@ APK는 [sidekick-releases](https://github.com/Lian-CrescentMoon/sidekick-release
 
 연결 방법과 지원 범위는 [docs/REMOTE_SETUP.md](docs/REMOTE_SETUP.md)를 참고하세요.
 
-## Sidekick으로 Sidekick 개발하기
-
-Sidekick 안에서 AI에게 Sidekick 자체를 고치게 할 수 있습니다.
-
-- 내 PC 배포는 설치본을 종료하지 않는 별도 프로세스가 처리합니다. 새 판이 90초 안에 정상 실행되지 않으면 앞 판으로 자동으로 되돌립니다.
-- 다시 켜질 때 직전에 하던 대화에 이어서 하도록 한 번 요청합니다(30분 안의 대화만, 설정에서 끌 수 있습니다).
-- 배포할 때마다 판 번호의 마지막 자리가 올라갑니다.
-- 새 판이 정상 실행되면 PC 설치 파일, Linux 패키지, 휴대폰 APK를 `sidekick-releases`에 자동으로 올립니다. `~/.sidekick3/no-auto-release` 파일을 만들면 자동 공개를 끕니다.
 
 ## 구조
 
